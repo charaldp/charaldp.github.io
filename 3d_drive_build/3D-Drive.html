@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="5WhkrI4ISaOzkJ5gSlJLegiV62EtOo5Bh6iYUVdc">
+
+    <title>3D-Drive</title>
+
+    <!-- Scripts -->
+    <script src="http://3d_drive.test/js/app.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="http://3d_drive.test/css/app.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        
+<scene-component :json="{
+        &quot;vehicles&quot; : [{
+          &quot;type&quot; : &quot;Car&quot;,
+          &quot;components&quot; : {
+            &quot;wheel&quot; : [{
+              &quot;DO&quot; : 0.5,
+              &quot;DI&quot; : 0.43,
+              &quot;t&quot; : 0.15,
+              &quot;tireType&quot; : &quot;Flat&quot;,
+              &quot;tireDims&quot; : {
+                &quot;DO&quot; : 0.5,
+                &quot;DI&quot; : 0.43,
+                &quot;t&quot; : 0.15
+              },
+              &quot;rimType&quot; : &quot;Ribs&quot;,
+              &quot;rimDims&quot; : {
+                &quot;DO&quot;: 0.43,
+                &quot;DI&quot;: 0.4,
+                &quot;t&quot;: 0.15,
+                &quot;intrWidth&quot;:  0.022,
+                &quot;numRibs&quot;: 12,
+                &quot;tRib&quot;: 0.015,
+                        &quot;dRib&quot;: 0.030,
+                &quot;ribsPosition&quot;: 0.12,
+                &quot;axleIntrWidth&quot;: -0.01,
+                &quot;axleDI&quot;: 0.01 ,
+                &quot;axleDO&quot;: 0.08,
+                &quot;tAxle&quot;: 0.02
+              },
+              &quot;pressure&quot; : 0.04,
+              &quot;frictionOptions&quot; : {
+                &quot;static&quot; : 1,
+                &quot;sliding&quot; : 0.8,
+                &quot;rolling&quot; : 0.01
+              },
+              &quot;meshMaterial&quot; : {
+                &quot;rimMaterialType&quot; : &quot;MeshPhysicalMaterial&quot;,
+                &quot;tire&quot; : {
+                  &quot;colour&quot;: &quot;0xd7d7d7&quot;,
+                  &quot;roughness&quot;: 0.17,
+                  &quot;metalness&quot;: 0.47,
+                  &quot;reflectivity&quot;: 1,
+                  &quot;clearCoat&quot;: 0.64,
+                  &quot;clearCoatRoughness&quot;: 0.22
+                },
+                &quot;tireMaterialType&quot; : &quot;MeshPhongMaterial&quot;,
+                &quot;rim&quot; : {
+                  &quot;shininess&quot;: 50,
+                  &quot;colour&quot; : &quot;0x1b1b1b&quot;
+                }
+              }
+            }],
+            &quot;engine&quot; : {
+              &quot;shaft_inertia&quot; : 10,
+              &quot;rev_limit&quot; : 126.66,
+              &quot;idle_rot&quot; : 17.5,
+              &quot;maximum_hp&quot; : 490
+            },
+            &quot;clutch&quot; : {
+              &quot;clutchFrictionCoeff&quot; : 0
+            },
+            &quot;transmission&quot; : {
+              &quot;gearbox&quot; : [ -0.15, 0.163, 0.262, 0.38, 0.52, 0.68, 0.87 ]
+            }
+          },
+          &quot;mass&quot; : 3000,
+          &quot;geometry&quot; : {
+            &quot;creationType&quot; : &quot;points2D&quot;,
+            &quot;pointArray&quot; : [
+              [1.71, 0],
+              [1.68, 0.04],
+              [1.67, 0.19],
+              [1.7, 0.25],
+              [1.69, 0.32],
+              [1.688, 0.324],
+              [1.682, 0.33],
+              [1.674, 0.338],
+              [1.67, 0.34],
+              [0.73, 0.43],
+              [0.65, 0.45],
+              [0.15, 0.70],
+              [-0.55, 0.72],
+              [-1.1,  0.43],
+              [-1.79, 0.41],
+              [-1.8, 0.4],
+              [-1.8, 0.09],
+              [-1.83, 0.09],
+              [-1.83, 0.0899],
+              [-1.8, 0.0899],
+              [-1.8, 0.037],
+              [-1.83, 0]
+            ],
+            &quot;wheelsCentersPositions&quot; :  [ [ -1, 0.8 ], [ 1, 0.8 ] ],
+            &quot;radius&quot; : 0.27,
+            &quot;width&quot; : 1.9,
+            &quot;bevelThickness&quot; : 0.05
+          },
+          &quot;spawnPosition&quot; : {
+            &quot;position&quot; : [ 0, 0, 0 ],
+            &quot;rotation&quot; : 0
+          }
+        }]
+      }
+      "></scene-component>
+
+
+    </div>
+</body>
+</html>
